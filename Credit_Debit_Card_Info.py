@@ -10,7 +10,7 @@ import csv
 import numpy as np
 
 #csv file imported and storf in reader
-reader = csv.DictReader(open("card_data.csv"))
+reader = csv.DictReader(open("card_data.csv", encoding="utf8", errors="ignore" ))
 
 #input card number
 card_number = input("Enter the card No: ")
